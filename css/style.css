@@ -1,0 +1,88 @@
+/* Main */
+:focus { outline:none; }
+.fp-container { max-width: 1200px; margin: 0 auto; }
+h1 { margin: 20px 0; text-transform: uppercase; letter-spacing: 1px; }
+h3 { font-size: 1.25rem; }
+
+/* Single */
+.fp-brief-detail { font-weight: bold; text-transform: uppercase;}
+.fp-brief-detail-text { font-weight: normal; text-transform: none; }
+.fp-brief-question { font-weight: bold; margin: 40px 0 20px 0; }
+.fp-brief-client-info { background: #efefef; border: 1px solid #dee2e6; padding: 20px; }
+
+/* Archive */
+.fp-brief-archive-listing { background: #efefef; padding: 20px; margin-bottom: 40px; border: 1px solid #dee2e6; } 
+.fp-brief-archive-listing .fp-brief-detail { text-transform: uppercase; font-size: 12px; }
+.fp-brief-archive-listing .fp-brief-detail-text { text-transform: none; font-size: inherit; }
+.fp-brief-archive-listing a { color: #ae162d ; }
+
+/* Sidebar */
+.fp-brief-navbox { background: #efefef; margin-bottom: 20px; padding: 20px; font-size: 12px; border: 1px solid #dee2e6; }
+.fp-brief-navbox h3 { text-transform: uppercase; font-size: 16px; font-weight: bold; }
+ul { list-style-type: none; margin: 0; padding: 0; }
+
+/* Forms */
+.fp-creative-brief-form { background: #efefef; border: 1px solid #dee2e6; padding: 0 20px; margin: 40px 0 60px 0; }
+.fp-creative-brief-form .acf-form-submit { padding-bottom: 20px; }
+form#acf-form input, form#acf-form textarea { border: 1px solid #dee2e6; }
+.fp-creative-brief-sender { background: #efefef; border: 1px solid #dee2e6; padding: 0 20px 20px 20px; }
+.fp-creative-brief-sender .acf-taxonomy-field .acf-actions.-hover { display: block; top: -25px; right: 10px; }
+.fp-creative-brief-sender .acf-taxonomy-field .acf-icon.-plus:before { content: 'Add Project'; font-size: 12px; width: auto; font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";; text-transform: uppercase; font-weight: bold; letter-spacing: -1px ; }
+.fp-creative-brief-sender .acf-taxonomy-field .acf-icon { border: none; border-radius: 0px;  height: auto; width: auto; }
+.fp-creative-brief-sender .acf-taxonomy-field  a.acf-icon { color: #fff; background-color: #ae162d; overflow: visible; width: auto; padding: 5px 20px; }
+.fp-creative-brief-sender .acf-taxonomy-field  a.acf-icon:hover { background: #7B0000; text-decoration: none; }
+.fp-creative-brief-form #message.updated { display: block; text-align: center; text-transform: uppercase; padding: 15px 0 0 0; margin: 20px auto; color: #ae162d; border: 1px solid #ae162d; }
+
+
+/* Client Login */
+.fp-creative-brief-client-login { background: #efefef; border: 1px solid #dee2e6; padding: 40px; margin: 40px; text-align: center;}
+.fp-creative-brief-client-login p.login-username, .fp-creative-brief-client-login p.login-password { display: none; }
+
+/* Buttons */
+.fp-creative-brief-client-login input#wp-submit,
+.fp-brief-navbox a, .fp-brief-btn,
+.acf-button { color: #fff !important; text-decoration: none !important; margin: 5px 0 0 0; padding: 5px; background: #ae162d; width: 100%; text-transform: uppercase; display: block; cursor: pointer; }
+.fp-brief-navbox a:hover, .fp-brief-btn:hover,
+.acf-button:hover { background: #7B0000; }
+.fp-brief-btn.edit-close, .fp-brief-btn.create-close { text-align: center; }
+.acf-actions .acf-button { width: 130px; font-size: 12px; text-align: center; }
+
+/* Sidr */
+.sidr {
+	display: block;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 999999;
+	width: 480px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #f0f0f0;
+	padding: 20px;
+	border-right: 1px solid #dee2e6;
+	<span class="webkit-css-property">max-width</span>: <span class="value">100%</span>;
+}
+.sidr.right{ left: auto; right: -500px; }
+.sidr.left{ left: -500px; right: auto; }
+.sidr form.acf-form { padding: 0; margin: 0 0 10px; }
+.media-modal, .media-modal.acf-media-modal { z-index: 999999 !important; }
+.sidr .acf-fields > .acf-field { padding-left: 0; padding-right: 0; }
+#sidr-left .acf-form-submit, #sidr-right .acf-form-submit { position: sticky; bottom: -20px; z-index: 999; }
+
+/* Additional Content Loop */
+.fp-additional-content { background: #efefef; padding: 10px; margin: 10px 0; border: 1px solid #dee2e6; font-size: 12px; }
+.fp-additional-content-author { text-transform: uppercase; margin: 0 0 10px 0;}
+.fp-additional-content-author a { color: #ae162d; }
+.fp-additional-content-author-text {text-transform: none; font-size: inherit;}
+
+/* Top Button */
+.topbutton { 
+	height: 50px; width: 50px; 
+	position: fixed; right: 30px; bottom: 30px; z-index: 1; 
+	background-image: url("../webimages/btop.png"); 
+	background-repeat: no-repeat; 
+	display: none; 
+}
+
+/* Honeypot */
+input#catchingbadguys { display: none; }
